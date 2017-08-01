@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
+
+</head>
+<body class="bg">
+
+<div class="pp1">
+<a href="javascript:void(0)" onclick="showHide('block_id')">
+<div class="switch"></div>
+</a>
+</div>
+
+<div class="parent" id="block_id" style="display: none;">
+	<div class="block">
+		<p class="title">Hello. We are getting ready. <br>
+		Until then, feel free to reach us at: </p>
+		<ul>
+			<li class="telegram">
+			<a href="https:/t.me/prxlv" target="_blank"><div class="icon"></div></a>
+			</li>
+			<li class="vk">
+			<a href="https:/vk.com/bosphorich" target="_blank"><div class="icon"></div></a>
+			</li>
+		</ul>
+		<p class="prxlv">2017 © prxlv</p>
+	</div>
+</div>
+
+
+ <script type="text/javascript">
+            function showHide(element_id) {
+                if (document.getElementById(element_id)) { 
+                    var obj = document.getElementById(element_id); 
+                    if (obj.style.display != "block") { 
+                        obj.style.display = "block";
+                    }
+                    else obj.style.display = "none";
+                }
+                else alert("Элемент с id: " + element_id + " не найден!"); 
+            }   
+        </script>
+	
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function() {
+    $('.switch').click(function() {
+    
+    $(this).toggleClass("switch , switchw");
+    $('body').toggleClass("bg , bg1");
+
+
+});
+ 
+
+
+    });
+
+</script>
+
+
+
+</body>
+</html>
